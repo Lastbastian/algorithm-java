@@ -1,0 +1,46 @@
+
+public class Student {
+	private String firstName, lastName;
+	private int studentID;
+	
+	public Student(String firstName, String lastName, int studentID) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.studentID = studentID;		
+	}
+	
+	public String getFirstName() {
+		return this.firstName;
+	}
+	
+	public String getLastName()	{
+		return this.lastName;
+	}
+	
+	public void setFirstName (String value) 
+	{
+		this.firstName = value;
+	}
+	
+	public void setLastName (String value) 
+	{
+		this.lastName = value;
+	}
+	
+	public void setStudentID (int value) 
+	{
+		this.StudentID = value;
+	}
+	
+	
+	
+	
+	
+	
+	public static void main()
+	{
+		
+	}
+	
+	
+}

@@ -1,0 +1,13 @@
+
+public class StudentTester {
+	public static void main (String[] args)
+	{
+		Student s1 = new Student("Bob", "Smith", 12345);
+		Student s2 = new Student("Suzy", "Wallaby", 12435);
+		Student s3 = new Student("Bart", "Simpson", 1027419374);
+		
+		
+		
+	}
+
+}
