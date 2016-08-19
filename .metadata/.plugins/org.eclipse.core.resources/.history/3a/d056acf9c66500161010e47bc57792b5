@@ -44,13 +44,12 @@ public class Student {
 	}	
 	
 	@Override
-	public boolean equals(Object other)
+	public boolean equals(Object myStudent)
 	{	
-		if (other instanceof Student) {
-			Student myStudent = (Student) other;
-			return this.studentID == myStudent.studentID;
-		} else {
+		if (myStudent instanceof Student)
 			return false;
-		}	
+		if (this.firstName == myStudent.firstName && this.lastName == myStudent.lastName && this.studentID == myStudent.studentID)
+			return true;
+		return result;
 	}
 }

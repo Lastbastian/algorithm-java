@@ -48,9 +48,11 @@ public class Student {
 	{	
 		if (other instanceof Student) {
 			Student myStudent = (Student) other;
-			return this.studentID == myStudent.studentID;
+			if (this.firstName != myStudent.firstName && this.lastName == myStudent.lastName && this.studentID == myStudent.studentID)
+				return true;
 		} else {
 			return false;
-		}	
+		}
+		
 	}
 }
