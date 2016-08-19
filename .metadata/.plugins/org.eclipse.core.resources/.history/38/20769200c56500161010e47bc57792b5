@@ -43,11 +43,10 @@ public class Student {
 		return lastName + ", " + firstName + " - " + studentID;
 	}	
 	
-	public boolean equals(Student myStudent)
-	{	
-		boolean result = false;
-		if (this.firstName == myStudent.firstName && this.lastName == myStudent.lastName && this.studentID == myStudent.studentID)
-			result = true;
+	public boolean equals()
+	{
+		boolean result;
+		
 		return result;
 	}
 }

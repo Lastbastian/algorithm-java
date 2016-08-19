@@ -43,11 +43,10 @@ public class Student {
 		return lastName + ", " + firstName + " - " + studentID;
 	}	
 	
-	public boolean equals(Student myStudent)
+	public boolean equals(String firstName, String lastName, int studentID)
 	{	
-		boolean result = false;
-		if (this.firstName == myStudent.firstName && this.lastName == myStudent.lastName && this.studentID == myStudent.studentID)
-			result = true;
-		return result;
+		boolean result;
+		if (this.firstName == firstName && this.lastName == lastName && this.studentID == studentID)
+			return result;
 	}
 }
