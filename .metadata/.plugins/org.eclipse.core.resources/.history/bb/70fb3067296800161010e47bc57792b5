@@ -3,13 +3,13 @@ import java.util.ArrayList;
 public class Course {
 	private String courseName;
 	private int numberEnrolled, maxEnrollment;
-	private ArrayList<Student> students;
+	private ArrayList students;
 	
 	public void Course(String courseName, int maxEnrollment) {
 		this.courseName = courseName;
 		this.numberEnrolled = 0;
 		this.maxEnrollment = maxEnrollment;
-		students = new ArrayList<Student>();
+		students = new ArrayList();
 	}
 	
 	public boolean enrollStudent(Student s) {
@@ -27,7 +27,6 @@ public class Course {
 	
 	public boolean dropStudent(Student s) {
 		if (isStudentEnrolled(s)) {
-			numberEnrolled--;
 			return students.remove(s);
 		} else {
 			return false;
@@ -35,9 +34,8 @@ public class Course {
 	}
 	
 	public void printRoster() {
-		for (int i = 0; i < numberEnrolled; i++) {
-			Student s = students.get(i);
-			System.out.println(s);
+		for (int i = 0; i < students.size(); i++) {
+			System.out.println(students.get(i));
 		}
 	}
 

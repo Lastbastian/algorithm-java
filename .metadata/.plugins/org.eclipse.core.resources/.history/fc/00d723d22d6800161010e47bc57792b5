@@ -36,8 +36,7 @@ public class Course {
 	
 	public void printRoster() {
 		for (int i = 0; i < numberEnrolled; i++) {
-			Student s = students.get(i);
-			System.out.println(s);
+			System.out.println(students.get(i));
 		}
 	}
 
