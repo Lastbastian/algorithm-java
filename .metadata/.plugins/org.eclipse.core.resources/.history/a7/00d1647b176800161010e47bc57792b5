@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public class Course {
+	private String courseName;
+	private int numberEnrolled, maxEnrollment;
+	private ArrayList students;
+	
+	public void Course(String courseName, int maxEnrollment) {
+		this.courseName = courseName;
+		this.numberEnrolled = 0;
+		this.maxEnrollment = maxEnrollment;
+	}
+	
+	
+	
+	
+}
