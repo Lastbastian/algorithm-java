@@ -54,12 +54,24 @@ public class Student implements Comparable<Student> {
 		}	
 	}
 
+//	@Override
+//	public int compareTo(Student other) {   // this compareTo is used for the Student class
+//		if (lastName.compareTo(other.lastName)==0) { // this compareTo is used for the String class
+//			return firstName.compareTo(other.firstName);
+//		} else {
+//			return lastName.compareTo(other.lastName);
+//		}
+//	}
+	
 	@Override
-	public int compareTo(Student other) {   // this compareTo is used for the Student class
-		if (lastName.compareTo(other.lastName)==0) { // this compareTo is used for the String class
-			return firstName.compareTo(other.firstName);
+	public int compareTo(Student other) {
+		if (studentID < other.studentID) {
+			return -1;
+		} else if (studentID > other.studentID) {
+			return 1;
 		} else {
-			return lastName.compareTo(other.lastName);
+			assert studentID == other.studentID;
+			return 0;
 		}
 	}
 }
