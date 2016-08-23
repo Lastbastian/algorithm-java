@@ -4,7 +4,7 @@ public class StudentTester {
 	{
 		Student s1 = new Student("Bob", "Smith", 12345);
 		Student s2 = new Student("Suzy", "Wallaby", 12346);
-		Student s3 = new Student("Bart", "Simpson", 12344);
+		Student s3 = new Student("Bart", "Simpson", 12347);
 		Student s4 = new Student("Bob", "Smith", 12345);
 		
 		Course c = new Course("Intro to Java", 15);
