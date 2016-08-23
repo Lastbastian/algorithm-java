@@ -22,8 +22,6 @@ public class StudentTester {
 		c.enrollStudent(theStudents[0]);
 		c.enrollStudent(theStudents[1]);
 		c.enrollStudent(theStudents[2]);
-		c.enrollStudent(g1);
-		c.enrollStudent(g2);
 		
 		c.printRoster();
 		

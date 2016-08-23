@@ -15,15 +15,13 @@ public class StudentTester {
 		theStudents[3] = g1;
 		theStudents[4] = g2;
 		
-//		System.out.println(g1.getThesisTopic()); - COMPILER ERROR because the DECLARED type is a Student and getThesisTopic() doesn't exist for that class although it does for GradStudent.
-		System.out.println(g2.getThesisTopic()); // This works because the method exists in GradStudent
+		System.out.println(g1.getThesisTopic()); // Complier error becuase the DECLARED type is a Student and getThesisTopic() doesn't exist for that class although it does for GradStudent.
+		System.out.println(g2.getThesisTopic());
 		
 		Course c = new Course("Intro to Java", 15);
 		c.enrollStudent(theStudents[0]);
 		c.enrollStudent(theStudents[1]);
 		c.enrollStudent(theStudents[2]);
-		c.enrollStudent(g1);
-		c.enrollStudent(g2);
 		
 		c.printRoster();
 		
