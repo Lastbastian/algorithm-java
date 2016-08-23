@@ -1,0 +1,12 @@
+
+public class GradStudent extends Student {
+	String thesisTopic;
+	
+	
+	public GradStudent(String firstName, String lastName, int studentID, String thesisTopic) {
+		super(firstName, lastName, studentID); // calls the parent constructor(Student)
+		this.thesisTopic = thesisTopic; // child specific initialization
+		
+	}
+
+}
