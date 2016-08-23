@@ -7,18 +7,12 @@ public class StudentTester {
 		theStudents[0] = new Student("Bob", "Smith", 12345);
 		theStudents[1] = new Student("Suzy", "Wallaby", 12346);
 		theStudents[2] = new Student("Bart", "Simpson", 12344);
-		
-		// both of the below work because of polymorphism a GradStudent is a Student. 
-		Student g1 = new GradStudent("Greg", "Winklby", 12343, "The Universise of Everything");	
-		GradStudent g2 = new GradStudent("Tamara", "Lollyfingle", 12340);	
-		
-		theStudents[3] = g1;
-		theStudents[4] = g2;
+		theStudents[3] = new Student("Bob", "Smith", 12345);
 		
 		Course c = new Course("Intro to Java", 15);
-		c.enrollStudent(theStudents[0]);
-		c.enrollStudent(theStudents[1]);
-		c.enrollStudent(theStudents[2]);
+		c.enrollStudent(s1);
+		c.enrollStudent(s2);
+		c.enrollStudent(s3);
 		
 		c.printRoster();
 		
