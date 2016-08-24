@@ -36,5 +36,14 @@ public class StudentTester {
 //		System.out.println("Are they equal? " + s1.equals(s2));
 //		System.out.println("Are they equal? " + s1.equals(s4));
 //		System.out.println("Are they aliases? " + (s1==s4));
+		
+		for(int i = 0; i < theStudents.length; i++) {
+			Student st = theStudents[i];
+			if(st instanceof GradStudent) { // instanceof checks the actual type at runtime
+				GradStudent gs = (GradStudent) st;
+				
+				System.out.println("\n\t" + gs.getThesisTopic());	
+			}
+		}
 	}
 }

@@ -1,0 +1,18 @@
+public class Movie {
+	private String title;
+	private int releaseYear;
+	private final static int DEFAULT_YEAR = 2015;
+	
+	public Movie(String title, int releaseYear) {
+		this.title = title;
+		this.releaseYear = releaseYear;
+	}
+
+	public Movie(String title) {
+		this.title = title;
+		this.releaseYear = DEFAULT_YEAR; 
+	}
+	
+	
+	
+}

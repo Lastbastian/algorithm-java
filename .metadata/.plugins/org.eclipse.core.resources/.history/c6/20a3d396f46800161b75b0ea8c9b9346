@@ -1,0 +1,7 @@
+
+public class MovieTester {
+
+	Movie[] myMovies = new Movie[5];
+	
+	myMovie[0] = 
+}
