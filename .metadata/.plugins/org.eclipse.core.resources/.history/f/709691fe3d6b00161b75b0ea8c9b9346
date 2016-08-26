@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 
 public class StudentTester {
 	public static void main (String[] args)
@@ -26,8 +24,6 @@ public class StudentTester {
 		c.enrollStudent(theStudents[2]);
 		c.enrollStudent(g1);
 		c.enrollStudent(g2);
-		
-		ArrayList<String> myStuff = new ArrayList<String>();
 		
 		c.printRoster();
 		
