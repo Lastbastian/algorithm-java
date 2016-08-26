@@ -6,20 +6,11 @@
 public class Computer {
 	private String brand, model;
 	private int memorySize;
-	private final static String DEFAULT_BRAND = "None", DEFAULT_MODEL = "None";
-	private final static int DEFAULT_MEMSIZE = 0;
-	
 	
 	public Computer(String brand, String model, int memorySize) {
 		this.brand = brand;
 		this.model = model;
 		this.memorySize = memorySize;
-	}
-	// No args constructor
-	public Computer() {
-		this.brand = DEFAULT_BRAND;
-		this.model = DEFAULT_MODEL;
-		this.memorySize = DEFAULT_MEMSIZE;
 	}
 	
 	public String getBrand() {

@@ -28,8 +28,6 @@ public class StudentTester {
 		c.enrollStudent(g2);
 		
 		ArrayList<String> myStuff = new ArrayList<String>();
-		myStuff.add("This");
-		myStuff.add("That");
 		
 		c.printRoster();
 		

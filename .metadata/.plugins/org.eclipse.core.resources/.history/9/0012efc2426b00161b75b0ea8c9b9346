@@ -1,0 +1,11 @@
+
+public class BoxR {
+	private Object thing;
+	private int thingCount;
+	
+	public BoxR(Object firstThing) {
+		this.thing = firstThing;
+		this.thingCount = 1;
+	}
+
+}

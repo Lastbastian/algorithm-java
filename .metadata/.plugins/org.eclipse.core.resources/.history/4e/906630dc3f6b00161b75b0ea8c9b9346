@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class NameInput {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		ArrayList names = new ArrayList();		
+		names.add(1);
+		names.add(new Integer(1));
+		names.add("hello");
+		
+		System.out.println("Enter names or \"quit\" to quit:");
+		String name = scan.nextLine();
+		
+		while(!name.equalsIgnoreCase("quit")) {
+			names.add(name);
+			
+			System.out.println("Enter names of \"quit\" to quit:");
+			name = scan.nextLine();
+		}
+	}
+}
