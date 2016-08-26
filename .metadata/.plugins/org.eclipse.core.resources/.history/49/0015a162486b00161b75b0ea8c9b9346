@@ -1,0 +1,14 @@
+
+public class BoxTester {
+	public static void main(String[] args) {
+		BoxR numbersBoxNotReally = new BoxR(new Integer(4));
+		numbersBoxNotReally.replaceContents(new Integer(6));
+//		numbersBoxNotReally.replaceContents(new String("hello"));
+		
+		Integer currentContents = (Integer) numbersBoxNotReally.getContents();
+		
+		System.out.println(numbersBoxNotReally);
+		
+		Box numberBox
+	}
+}

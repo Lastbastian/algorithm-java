@@ -14,11 +14,5 @@ public class BoxTester {
 		
 		Box<String> stringsBox = new Box<String>(new String("Hello"));
 		stringsBox.replaceContents(new String("Hi"));
-		
-		Box<String> wordBox = new Box<String>("Hi");
-		wordBox.replaceContents(new String ("Hi"));
-		
-		System.out.println(stringsBox.equals(wordBox));
-		
 	}
 }
