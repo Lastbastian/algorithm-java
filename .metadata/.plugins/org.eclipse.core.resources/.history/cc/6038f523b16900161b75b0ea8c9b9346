@@ -1,0 +1,9 @@
+import java.awt.Point;
+
+public class JavaMemoryTester {
+	public static void main(String[] args){
+		int num = 0;
+		System.out.println("In main, before method, num is " + num);
+		PrimitiveParam(num);
+	}
+}
