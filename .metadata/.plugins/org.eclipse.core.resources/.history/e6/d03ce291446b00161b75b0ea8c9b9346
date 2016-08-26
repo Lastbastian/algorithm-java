@@ -16,11 +16,6 @@ public class BoxR {
 		return thingCount;
 	}
 	
-	public void replaceContents(Object newThing) {
-		this.thing = newThing;
-		thingCount ++;
-	}
-	
 	@Override 
 	public String toString() {
 		return thing.toString() + " (item " + thingCount + ")";

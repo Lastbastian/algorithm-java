@@ -1,0 +1,10 @@
+
+public class BoxTester {
+	public static void main(String[] args) {
+		BoxR numbersBox = new BoxR(new Integer(4));
+		numbersBox.replaceContents(new Integer(6));
+		
+		System.out.println(numbersBox);
+//		System.out.println(numbersBox.getCount());
+	}
+}
