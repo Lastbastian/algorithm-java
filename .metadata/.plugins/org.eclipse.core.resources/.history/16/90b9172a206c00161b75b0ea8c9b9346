@@ -36,8 +36,6 @@ public class BoxTester {
 		
 		System.out.println(listOfNumberBoxes);
 		
-		Integer.compare(5,7);
-		
 		
 		
 //		System.out.println(wordBox.equals(wordBox2));

@@ -39,12 +39,10 @@ public class Box<T extends Comparable<? super T>> implements Comparable<Box<T>> 
 			return false;
 		}
 	}
+	
 	@Override
 	public int compareTo(Box<T> otherBox) {
-		if(this.thing.compareTo(otherBox.thing)==0){
-			return Integer.compare(this.thingCount, otherBox.thingCount);
-		} else {
-			return this.thing.compareTo(otherBox.thing);
-		}
+//		return this.thing.compareTo(otherBox.thing);
+		return this.thingCount.compareTo(otherBox.thingCount);
 	}
 }

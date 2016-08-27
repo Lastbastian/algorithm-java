@@ -32,11 +32,7 @@ public class BoxTester {
 		listOfNumberBoxes.add(numbersBox4);
 		listOfNumberBoxes.add(numbersBox5);
 		
-		Collections.sort(listOfNumberBoxes);
-		
-		System.out.println(listOfNumberBoxes);
-		
-		Integer.compare(5,7);
+		Collection.sort(listOfNumberBoxes);
 		
 		
 		

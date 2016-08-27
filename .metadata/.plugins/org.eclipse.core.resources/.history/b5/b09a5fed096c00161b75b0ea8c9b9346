@@ -1,5 +1,5 @@
 
-public class Box<T extends Comparable<? super T>> implements Comparable<Box<T>> { // The Capital letter in <> signifies generic type in our class
+public class Box<T> { // The Capital letter in <> signifies generic type in our class
 	private T thing;
 	private int thingCount;
 	
@@ -37,14 +37,6 @@ public class Box<T extends Comparable<? super T>> implements Comparable<Box<T>> 
 			return sameThing && sameCount;
 		} else {
 			return false;
-		}
-	}
-	@Override
-	public int compareTo(Box<T> otherBox) {
-		if(this.thing.compareTo(otherBox.thing)==0){
-			return Integer.compare(this.thingCount, otherBox.thingCount);
-		} else {
-			return this.thing.compareTo(otherBox.thing);
 		}
 	}
 }

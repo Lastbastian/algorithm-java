@@ -10,8 +10,8 @@ public class BoxTester {
 		
 		System.out.println(numbersBoxNotReally);
 		
-		Box<Integer> numbersBox1 = new Box<Integer>(new Integer(4));  // You have to specify type in <> otherwise you can add strings and other types which defeats the purpose of our generic based class.
-		numbersBox1.replaceContents(new Integer(9));
+		Box<Integer> numbersBox = new Box<Integer>(new Integer(4));  // You have to specify type in <> otherwise you can add strings and other types which defeats the purpose of our generic based class.
+		numbersBox.replaceContents(new Integer(9));
 		
 		Box<String> wordBox = new Box<String>(new String("Hello"));
 		wordBox.replaceContents(new String("Hi"));
@@ -26,17 +26,7 @@ public class BoxTester {
 		
 		ArrayList<Box<Integer>> listOfNumberBoxes = new ArrayList<Box<Integer>>();
 		
-		listOfNumberBoxes.add(numbersBox1);
 		listOfNumberBoxes.add(numbersBox2);
-		listOfNumberBoxes.add(numbersBox3);
-		listOfNumberBoxes.add(numbersBox4);
-		listOfNumberBoxes.add(numbersBox5);
-		
-		Collections.sort(listOfNumberBoxes);
-		
-		System.out.println(listOfNumberBoxes);
-		
-		Integer.compare(5,7);
 		
 		
 		
