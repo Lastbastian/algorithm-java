@@ -36,7 +36,13 @@ public class BoxTester {
 		
 		System.out.println(listOfNumberBoxes);
 		
-//		Integer.compare();		
+//		Integer.compare();
+		
+		List list = new ArrayList();
+		list.add("hello");
+		String s = (String) list.get(0);
+		
+		
 		
 //		System.out.println(wordBox.equals(wordBox2));
 	}

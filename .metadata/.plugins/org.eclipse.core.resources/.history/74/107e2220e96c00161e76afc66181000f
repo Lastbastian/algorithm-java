@@ -1,0 +1,10 @@
+
+public class Student <T> {
+	private T student;
+	private String firstName, lastName;
+	private int studentID;
+	
+	
+	
+
+}
