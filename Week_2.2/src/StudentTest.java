@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+
+public class StudentTest {
+	
+	public static void main(String[] args) {
+	
+		Student s1 = new Student(12345);
+		Student s2 = new Student(12344);
+		Student s3 = new Student(12343);
+		
+		ArrayList myStudents = new ArrayList();
+		
+		myStudents.add(s1);
+		myStudents.add(s2);
+		myStudents.add(s3);
+		
+		for(int i=0; i < myStudents.size(); i++) {
+			System.out.println(myStudents.get(i));
+		}
+	
+	}
+}

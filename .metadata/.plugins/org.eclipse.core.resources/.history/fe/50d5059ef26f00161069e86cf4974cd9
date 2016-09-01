@@ -1,0 +1,4 @@
+
+public class OrderedPair<T> implements Pairable<T> {
+
+}

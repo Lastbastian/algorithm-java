@@ -1,8 +1,0 @@
-
-public class GradStudent extends Student {
-	
-	public GradStudent(String firstName, String lastName, int StudentID) {
-		
-	}
-
-}

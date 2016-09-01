@@ -1,9 +1,0 @@
-
-public class GradStudent extends Student {
-	
-	public GradStudent(String firstName, String lastName, int studentID) {
-		super(firstName, lastName, studentID); // calls the parent constructor(Student)
-		
-	}
-
-}

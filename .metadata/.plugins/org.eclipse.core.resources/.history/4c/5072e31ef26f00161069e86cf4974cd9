@@ -1,0 +1,6 @@
+
+public interface Pairable {
+	public T getFirst();
+	public T getSecond();
+	public void changeOrder();
+}

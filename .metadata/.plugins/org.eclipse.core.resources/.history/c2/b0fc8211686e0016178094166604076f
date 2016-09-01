@@ -1,0 +1,12 @@
+
+public class Student {
+	private int studentID;
+	
+	public Student(int studentID) {
+		this.studentID = studentID;
+	}
+
+	public String getStudentID() {
+		return this.studentID;
+	}
+}
