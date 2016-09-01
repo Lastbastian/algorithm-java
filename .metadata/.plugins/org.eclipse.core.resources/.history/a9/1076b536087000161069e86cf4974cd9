@@ -44,19 +44,11 @@ public class Trio<T> {
 		return first == second && first == third && second == third;
 	}
 	
-	public T sortTrio(T firstItem, T secondItem, T thirdItem) {
-		boolean sorted = false;
-		for (int i = 0; i < 3; i++) {
-			
-			
-		}
-	}
-	
 	@Override
 	public boolean equals(Object other) {	
 		if (other instanceof Trio) {
-			Trio<T> myTrio = (Trio<T>) other;
-			
+			Trio myTrio = (Trio) other;
+			return myTrio.contains(this.first) && myTrio.contains(this.second) && myTrio.contains(this.third);
 		} else {
 			return false;
 		}	

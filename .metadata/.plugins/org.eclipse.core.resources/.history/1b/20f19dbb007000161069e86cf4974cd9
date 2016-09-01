@@ -33,32 +33,22 @@ public class Trio<T> {
 	}
 	
 	public String toString() {
-		return "(" + first + ", " + second + ", " + third + ")";
+		return "( " + first + ", " + second + ", " + third + " )";
 	}
 	
 	public boolean contains(T item) {
 		return first == item || second == item || third == item;
 	}
 	
-	public boolean sameItems() {
-		return first == second && first == third && second == third;
+	public boolean sameItems(T otherItem) {
+		otherItem.getItem1();
+//		return ((this.first == otherItem.getItem1() || this.first == otherItem.second || this.first == otherItem.third) &&
+//				(this.second == firstItem || this.first == secondItem || this.first == thirdItem) &&
+//				(this.third == firstItem || this.first == secondItem || this.first == thirdItem));
 	}
 	
-	public T sortTrio(T firstItem, T secondItem, T thirdItem) {
-		boolean sorted = false;
-		for (int i = 0; i < 3; i++) {
-			
-			
-		}
-	}
-	
-	@Override
-	public boolean equals(Object other) {	
-		if (other instanceof Trio) {
-			Trio<T> myTrio = (Trio<T>) other;
-			
-		} else {
-			return false;
-		}	
-	}
+//	@Override
+//	public boolean equals() {
+//		return false;
+//	}
 }
