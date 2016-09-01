@@ -1,0 +1,19 @@
+
+public class Trio<T> {
+	T first, second, third;
+	
+	public Trio(T firstItem, T secondItem, T thirdItem) {
+		this.first = firstItem;
+		this.second = secondItem;
+		this.third = thirdItem;
+	}
+	
+	public T getFirst() {
+		return first;
+	}
+	
+	public T getSecond() {
+		return second;
+	}
+
+}

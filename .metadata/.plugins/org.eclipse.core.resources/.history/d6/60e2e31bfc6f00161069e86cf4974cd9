@@ -1,0 +1,53 @@
+
+public class Trio<T> {
+	T first, second, third;
+	
+	public Trio(T firstItem, T secondItem, T thirdItem) {
+		this.first = firstItem;
+		this.second = secondItem;
+		this.third = thirdItem;
+	}
+	
+	public T getFirst() {
+		return first;
+	}
+	
+	public void setFirst(T firstItem) {
+		this.first = firstItem;
+	}
+	
+	public T getSecond() {
+		return second;
+	}
+	
+	public void setSecond(T secondItem) {
+		this.second = secondItem;
+	}
+
+	public T getThird() {
+		return third;
+	}
+	
+	public void setThird(T thirdItem) {
+		this.third = thirdItem;
+	}
+	
+	public String toString() {
+		return "( " + first + ", " + second + ", " + third + " )";
+	}
+	
+	public boolean contains(T item) {
+		return first == item || second == item || third == item;
+	}
+	
+	public boolean sameItems(T firstItem, T secondItem, T thirdItem) {
+		return ((this.first == firstItem || this.first == secondItem || this.first == thirdItem) &&
+				(this.second == firstItem || this.first == secondItem || this.first == thirdItem) &&
+				(this.third == firstItem || this.first == secondItem || this.first == thirdItem));
+	}
+	
+	@Override
+	public boolean equals() {
+		return false;
+	}
+}

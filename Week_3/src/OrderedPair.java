@@ -17,12 +17,12 @@ public class OrderedPair<T> implements Pairable<T> {
 	
 	@Override
 	public String toString() {
-		return "(" + first + ", " + second + " )";
+		return "(" + first + ", " + second + ")";
 	}
-	
-	public void changeOrder(T firstItem, T secondItem) {
+	@Override 
+	public void changeOrder() {
 		T temp = this.first;
-		this.first = secondItem;
+		this.first = second;
 		this.second = temp;
 	}
 }

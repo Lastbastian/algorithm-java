@@ -1,0 +1,7 @@
+
+public class Trio<T> {
+	T first, second, third;
+	
+	
+
+}

@@ -1,0 +1,12 @@
+
+public class OrderedPairTest {
+
+	public static void main(String[] args) {
+		OrderedPair<String> fruits = new OrderedPair<String>("Apple", "Banana");
+		
+		System.out.println("The first item is " + fruits.getFirst() + " and the second item is " + fruits.getSecond() );
+		fruits.changeOrder();
+		System.out.println("Now the first item is " + fruits.getFirst() + " and the second item is " + fruits.getSecond() );
+	}
+
+}
