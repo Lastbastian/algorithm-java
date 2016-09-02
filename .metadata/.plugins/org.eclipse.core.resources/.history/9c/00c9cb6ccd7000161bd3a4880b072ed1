@@ -1,5 +1,5 @@
 
-public class Trio<T> {	
+public class Trio<T extends Comparable<? super T>> implements Comparable<Trio <T>> {	
 	T first, second, third;
 	
 	public Trio(T firstItem, T secondItem, T thirdItem) {
@@ -78,5 +78,31 @@ public class Trio<T> {
 			result = false;
 		}
 		return result;
-	}	
+	}
+
+	@Override
+	public int compareTo(Trio<T> otherTrio) {
+		
+		
+		return 0;
+	}
+	
+	private T smallestItem() {
+		if(this.first < this.second){}
+		
+	
+	
+//	public int compareTo(Box<T> otherBox) {
+//		if(this.thing.compareTo(otherBox.thing)==0){
+//			return Integer.compare(this.thingCount, otherBox.thingCount);
+//		} else {
+//			return this.thing.compareTo(otherBox.thing);
+//		}
+//	}
+	
+	
+	
+	
+	
+	
 }

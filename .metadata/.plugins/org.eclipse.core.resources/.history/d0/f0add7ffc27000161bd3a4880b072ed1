@@ -45,13 +45,15 @@ public class TrioTester {
 		 * un-comment the line of code below and it should cause a compiler error 
 		 * because wordTrio should only accept Strings
 		 */
-//		wordTrio.setItem2(3);
+		//wordTrio.setItem2(3);
 
 		
 		Trio<Integer> numberTrio2 = new Trio<Integer>(5, 6, 8);
 		Trio<Integer> numberTrio3 = new Trio<Integer>(8, 5, 6);
 		System.out.println("Trios the same? Should be true: " + numberTrio2.equals(numberTrio3));
 		numberTrio2.setItem2(5);
+		System.out.println("Trio 2" + Trio2);
+		System.out.println("Trio 3" + Trio3);
 		System.out.println("Trios the same? Should be false: " + numberTrio2.equals(numberTrio3));
 		System.out.println("Trios the same? Should be false: " + numberTrio2.equals(wordTrio));
 		System.out.println();

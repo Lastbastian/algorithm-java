@@ -1,5 +1,5 @@
 
-public class Trio<T> {	
+public class Trio<T> {
 	T first, second, third;
 	
 	public Trio(T firstItem, T secondItem, T thirdItem) {
@@ -44,39 +44,46 @@ public class Trio<T> {
 		return first == second && first == third && second == third;
 	}
 	
+//	public T sortTrio(T firstItem, T secondItem, T thirdItem) {
+//		boolean sorted = false;
+//		for (int i = 0; i < 3; i++) {
+//			
+//			
+//		}
+//	}
+
 	@Override
 	public boolean equals(Object other) {
 		boolean result = false;
-		boolean flag1 = false, flag2 = false, flag3 = false;
 		if (other instanceof Trio) {
-			Trio<T> myTrio = (Trio<T>) other;
-			// Test first item
-			if(this.first == myTrio.first)
-				flag1 = true;
-			else if(this.first == myTrio.second)
-				flag2 = true;
-			else if(this.first == myTrio.third)
-				flag3 = true;
-			// Test second item
-			if(this.second == myTrio.first)
-				flag1 = true;
-			else if(this.second == myTrio.second)
-				flag2 = true;
-			else if(this.second == myTrio.third)
-				flag3 = true;
-			// Test third item
-			if(this.third == myTrio.first)
-				flag1 = true;
-			else if(this.third == myTrio.second)
-				flag2 = true;
-			else if(this.third == myTrio.third)
-				flag3 = true;
+			Trio<T> myTrio = (Trio) other; // not sure if these is needed or not
 			
-			if (flag1 && flag2 && flag3)
+			if(this.first == myTrio.first)
+				myTrio.setItem1(null);
+			else if(this.first == myTrio.second)
+				myTrio.setItem2(null);
+			else if(this.first == myTrio.third)
+				myTrio.setItem3(null);
+			
+			if(this.second == myTrio.first)
+				myTrio.setItem1(null);
+			else if(this.second == myTrio.second)
+				myTrio.setItem2(null);
+			else if(this.second == myTrio.third)
+				myTrio.setItem3(null);
+			
+			if(this.third == myTrio.first)
+				myTrio.setItem1(null);
+			else if(this.third == myTrio.second)
+				myTrio.setItem2(null);
+			else if(this.third == myTrio.third)
+				myTrio.setItem3(null);
+			
+			if (myTrio.first == null && myTrio.second == null && myTrio.third == null)
 				result = true;
 		} else {
 			result = false;
 		}
-		return result;
-	}	
+		return result;	
+	}
 }

@@ -1,5 +1,5 @@
 
-public class Trio<T> {	
+public class Trio<T> {
 	T first, second, third;
 	
 	public Trio(T firstItem, T secondItem, T thirdItem) {
@@ -78,5 +78,5 @@ public class Trio<T> {
 			result = false;
 		}
 		return result;
-	}	
+	}
 }
