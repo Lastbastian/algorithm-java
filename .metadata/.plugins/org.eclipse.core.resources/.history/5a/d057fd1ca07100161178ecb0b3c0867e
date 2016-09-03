@@ -1,0 +1,21 @@
+
+public class ScoreList {
+	// quizScoreList is of type ListInterface<Integer>
+	if(!quizscoreList.isEmpty()){
+		Integer lowestScore = quizScoreList.getEntry(1);
+		int lowestScorePosition = 1;
+		
+		assert lowestScore != null;
+		
+		for(int i=2; i <= quizScoreList.getLength(); i++) {
+			Integer currentScore = quizScoreList.getEntry(i);
+			
+			if (currentScore < lowestScore) {
+				lowestScore = currentScore;
+				lowestScorePosition = i;
+			}
+		}
+		
+		quizScoreList.remove(lowestScorePosition);	
+	}
+}

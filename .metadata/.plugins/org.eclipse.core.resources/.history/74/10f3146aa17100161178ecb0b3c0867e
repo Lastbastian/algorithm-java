@@ -1,0 +1,41 @@
+
+public class ScoreList {
+	// TASK ---- FIND THE LOWEST SCORE AND REMOVE IT
+	// quizScoreList is of type ListInterface<Integer>
+	if(!quizscoreList.isEmpty()){
+		Integer lowestScore = quizScoreList.getEntry(1);
+		int lowestScorePosition = 1;
+		
+		assert lowestScore != null;
+		
+		for(int i=2; i <= quizScoreList.getLength(); i++) {
+			Integer currentScore = quizScoreList.getEntry(i);
+			
+			if (currentScore < lowestScore) {
+				lowestScore = currentScore;
+				lowestScorePosition = i;
+			}
+		}
+		
+		quizScoreList.remove(lowestScorePosition);	
+	}
+}
+// quizScoreBag is of type BagInterface<Integer>
+// tempBag is a type of BagInterface<Integer>
+
+if(!quizScoreBag.isEmpty()) {
+	Integer lowestScore = quizScoreBag.remove();
+	tempBag.add(lowestScore);
+	
+	while(!quizScoreBag.isEmpty()) {
+		Integer currentScore = quizScoreBag.remove();
+		tempBag.add(currentScore);
+		
+		if (currentScore < lowestScore) {
+			lowestScore = currentScore;
+		}
+	}
+	
+	
+}
+

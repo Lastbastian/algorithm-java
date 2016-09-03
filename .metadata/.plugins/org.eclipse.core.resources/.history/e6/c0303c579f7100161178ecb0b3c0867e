@@ -1,0 +1,11 @@
+
+public class ScoreList {
+	
+	if(!quizscoreList.isEmpty()){
+		Integer lowerScore = quizScoreList.getEntry(1)
+
+	}
+
+	
+	
+}

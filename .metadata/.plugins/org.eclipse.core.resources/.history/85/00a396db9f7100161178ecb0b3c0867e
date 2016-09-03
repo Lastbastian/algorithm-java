@@ -1,0 +1,20 @@
+
+public class ScoreList {
+	
+	if(!quizscoreList.isEmpty()){
+		Integer lowestScore = quizScoreList.getEntry(1);
+		int lowerScorePosition = 1;
+		
+		assert lowestScore != null;
+		
+		for(int i=2; i <= quizScoreList.getLength(); i++) {
+			
+		}
+		
+		
+		
+
+	}
+
+	
+}
