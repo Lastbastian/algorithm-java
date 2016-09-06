@@ -38,8 +38,8 @@ if(!quizScoreBag.isEmpty()) {
 	// Found lower score
 	// quizScoreBag is empty
 	// tempBag hold all of the scores
-	// Now put everything from tempBag back into quizScoreBag 
-	while(!tempBag.isEmpty()) {
+	
+	while(!tempScoreBag.isEmpty()) {
 		Integer item = tempScoreBag.remove();
 		quizScoreBag.add(item);	
 	}
