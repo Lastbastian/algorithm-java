@@ -1,0 +1,31 @@
+
+public class VowelsLetters {
+	while(!letters.isEmpty()) {
+		String currentLetter = letters.remove();
+		if (currentLetter == 'a' || 
+				currentLetter == 'e' || 
+				currentLetter == 'i' || 
+				currentLetter == 'o' ||
+				currentLetter == 'u')
+			vowels.add(currentLetter);
+	}
+	vowelsCount = vowels.getCurrentSize();
+	int aCount = 0, eCount = 0, iCount = 0, oCount = 0, uCount = 0;
+	
+	while(!vowels.isEmpty()) {
+		String currentVowel = vowels.remove();
+		
+		if(currentVowel == String.valueOf('a'))
+			aCount++;
+		if(currentVowel == String.valueOf('e'))
+			eCount++;
+		if(currentVowel == String.valueOf('i'))
+			iCount++;
+		if(currentVowel == String.valueOf('o'))
+			oCount++;
+		if(currentVowel == String.valueOf('u'))
+			uCount++;	
+	}
+	
+	
+}
